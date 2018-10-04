@@ -14,8 +14,6 @@ user-scalable=no">
 <style type="text/css">
 /* Make the image fully responsive */
 
-xample:-
-
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 320px) 
@@ -85,8 +83,12 @@ background-color: #000;
 width: 100%;
 }
 
-.title {
-	
+.header {	
+	height: 20px;
+}
+
+.footer {
+	height: 20px;
 }
 
 .portfolio {
@@ -96,7 +98,7 @@ width: 100%;
 }
 
 .portfolio_nav {
-	padding-top: 30px;
+	padding-top: 20px;
 	width: 80%;
 	margin: 0 auto;
 	display: table;
@@ -104,8 +106,8 @@ width: 100%;
 }
 
 .portfolio_column {
+	float: left;
     width: 32%;
-    padding: 10px;
 	border-bottom: 1px solid #fff; 
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:12px;
@@ -121,6 +123,8 @@ width: 100%;
 </head>
 
 <body>
+<div class="header"></div>
+
 <div class="portfolio">
 <div id="demo" class="carousel slide" data-ride="carousel">
 
@@ -182,15 +186,41 @@ width: 100%;
 </div></div>
 
 <div class="portfolio_nav">
-<div class="portfolio_column" style="float: left;"><img src="Images/1.gif" width="100%">Some text...</div>
+<div class="portfolio_column"><img src="Images/1.gif" width="100%"></div>
 
 <div class="space">&nbsp;</div>
 
-<div class="portfolio_column" style="float: left;"><img src="Images/2.gif" width="100%">Some text...</div>
+<div class="portfolio_column"><img src="Images/2.gif" width="100%"></div>
 
 <div class="space">&nbsp;</div>
 
-<div class="portfolio_column" style="float: left;"><img src="Images/3.gif" width="100%">Some text...</div>
+<div class="portfolio_column"><img src="Images/3.gif" width="100%"></div>
 </div>
+
+<div class="portfolio_nav">
+<div class="portfolio_column"><img src="Images/4.gif" width="100%"></div>
+
+<div class="space">&nbsp;</div>
+
+<div class="portfolio_column"><img src="Images/5.gif" width="100%"></div>
+
+<div class="space">&nbsp;</div>
+
+<div class="portfolio_column"><img src="Images/6.gif" width="100%"></div>
+</div>
+
+<div class="portfolio_nav">
+<div class="portfolio_column"><img src="Images/7.gif" width="100%"></div>
+
+<div class="space">&nbsp;</div>
+
+<div class="portfolio_column"><img src="Images/8.gif" width="100%"></div>
+
+<div class="space">&nbsp;</div>
+
+<div class="portfolio_column"><img src="Images/9.gif" width="100%"></div>
+</div>
+
+<div class="footer">&nbsp;</div>
 </body>
 </html>
