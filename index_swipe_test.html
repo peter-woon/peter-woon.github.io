@@ -124,25 +124,7 @@ a:hover {
 a:active {
 	text-decoration: none;
 }
-\\
-/* Swipe 2 required styles */
 
-.swipe {
-  overflow: hidden;
-  visibility: hidden;
-  position: relative;
-}
-.swipe-wrap {
-  overflow: hidden;
-  position: relative;
-}
-.swipe-wrap > div {
-  float:left;
-  width:100%;
-  position: relative;
-}
-
-/* END required styles */
 </style>
 </head>
 
@@ -154,24 +136,24 @@ a:active {
         
 <div class="spacer">&nbsp;</div>
 <div class="portfolio">
-<div id="mySwipe" class="carousel slide" data-ride="carousel">
+<div id="demo" class="carousel slide" data-ride="carousel">
 
   <!-- Indicators -->
   <ul class="carousel-indicators">
-    <li data-target="#mySwipe" data-slide-to="0" class="active"></li>
-    <li data-target="#mySwipe" data-slide-to="1"></li>
-    <li data-target="#mySwipe" data-slide-to="2"></li>
-    <li data-target="#mySwipe" data-slide-to="3"></li>
-    <li data-target="#mySwipe" data-slide-to="4"></li>
-    <li data-target="#mySwipe" data-slide-to="5"></li>
-    <li data-target="#mySwipe" data-slide-to="6"></li>
-    <li data-target="#mySwipe" data-slide-to="7"></li>
-    <li data-target="#mySwipe" data-slide-to="8"></li>
-    <li data-target="#mySwipe" data-slide-to="9"></li>
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+    <li data-target="#demo" data-slide-to="3"></li>
+    <li data-target="#demo" data-slide-to="4"></li>
+    <li data-target="#demo" data-slide-to="5"></li>
+    <li data-target="#demo" data-slide-to="6"></li>
+    <li data-target="#demo" data-slide-to="7"></li>
+    <li data-target="#demo" data-slide-to="8"></li>
+    <li data-target="#demo" data-slide-to="9"></li>
   </ul>
   
   <!-- The slideshow -->
-  <div class="swipe-wrap">
+  <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="Images/1.gif" width="100%">
     </div>
@@ -205,10 +187,10 @@ a:active {
   </div>
   
   <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#mySwipe" data-slide="prev">
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </a>
-  <a class="carousel-control-next" href="#mySwipe" data-slide="next">
+  <a class="carousel-control-next" href="#demo" data-slide="next">
     <span class="carousel-control-next-icon"></span>
   </a>
 </div></div>
@@ -284,8 +266,8 @@ a:active {
 <script>
 
 // pure JS
-var elem = document.getElementById('mySwipe');
-window.mySwipe = Swipe(elem, {
+var elem = document.getElementById('demo');
+window.demo = demo(elem, {
   // startSlide: 4,
   // auto: 3000,
   // continuous: true,
@@ -296,7 +278,7 @@ window.mySwipe = Swipe(elem, {
 });
 
 // with jQuery
-// window.mySwipe = $('#mySwipe').Swipe().data('Swipe');
+// window.demo = $('#demo').demo().data('demo');
 
 </script>
 </body>   
