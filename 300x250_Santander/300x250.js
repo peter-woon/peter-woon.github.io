@@ -189,21 +189,6 @@ p.nominalBounds = new cjs.Rectangle(-150,-125,300,250);
 p.nominalBounds = new cjs.Rectangle(-150,-125,300,250);
 
 
-(lib.replay_btn = function(mode,startPosition,loop) {
-if (loop == null) { loop = false; }	this.initialize(mode,startPosition,loop,{});
-
-	// hit
-	this.shape = new cjs.Shape();
-	this.shape.graphics.f("#666666").s().p("AiVCWIAAkrIErAAIAAErg");
-	this.shape.setTransform(35,15);
-	this.shape._off = true;
-
-	this.timeline.addTween(cjs.Tween.get(this.shape).wait(3).to({_off:false},0).wait(1));
-
-}).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(0,0,50,30);
-
-
 (lib.clickthrough_btn = function(mode,startPosition,loop) {
 	this.initialize(mode,startPosition,loop,{});
 
@@ -253,16 +238,6 @@ p.nominalBounds = new cjs.Rectangle(-150,-300,300,250);
 	// actions tween:
 	this.timeline.addTween(cjs.Tween.get(this).call(this.frame_0).wait(479).call(this.frame_479).wait(1));
 
-	// AS
-	this.replay_btn = new lib.replay_btn();
-	this.replay_btn.name = "replay_btn";
-	this.replay_btn.parent = this;
-	this.replay_btn.setTransform(23.25,10,1.4829,0.5986,0,0,0,35.1,15.6);
-	this.replay_btn._off = true;
-	new cjs.ButtonHelper(this.replay_btn, 0, 1, 2, false, new lib.replay_btn(), 3);
-
-	this.timeline.addTween(cjs.Tween.get(this.replay_btn).wait(479).to({_off:false},0).wait(1));
-
 	// clickTag
 	this.clickthrough_btn = new lib.clickthrough_btn();
 	this.clickthrough_btn.name = "clickthrough_btn";
@@ -274,8 +249,8 @@ p.nominalBounds = new cjs.Rectangle(-150,-300,300,250);
 
 	// border
 	this.shape = new cjs.Shape();
-	this.shape.graphics.f().s("#EB0000").ss(2,1,1).p("EgXbgu3MAu3AAAMAAABdvMgu3AAAg");
-	this.shape.setTransform(150,125.0015,1,0.4167);
+	this.shape.graphics.f().s("#EB0000").ss(2,1,1).p("A3ezhMAAAAnDMAu4AAAMAAAgnDIAFAAA3ezhMAuzAAA");
+	this.shape.setTransform(150.25,125);
 
 	this.timeline.addTween(cjs.Tween.get(this.shape).wait(480));
 

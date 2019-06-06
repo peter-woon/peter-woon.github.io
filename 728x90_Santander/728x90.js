@@ -18,7 +18,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,728,90);
 (lib.kv = function() {
 	this.initialize(img.kv);
 }).prototype = p = new cjs.Bitmap();
-p.nominalBounds = new cjs.Rectangle(0,0,315,90);
+p.nominalBounds = new cjs.Rectangle(0,0,351,90);
 
 
 (lib.logo = function() {
@@ -74,7 +74,7 @@ p.nominalBounds = new cjs.Rectangle(0,0,728,90);
 	this.timeline.addTween(cjs.Tween.get(this.instance).wait(1));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(-162,-135,315,90);
+p.nominalBounds = new cjs.Rectangle(-162,-135,351,90);
 
 
 (lib.Tween24 = function(mode,startPosition,loop) {
@@ -330,12 +330,12 @@ p.nominalBounds = new cjs.Rectangle(-150,-300,728,90);
 	// kv
 	this.instance_9 = new lib.Tween28("synched",0);
 	this.instance_9.parent = this;
-	this.instance_9.setTransform(162,135);
+	this.instance_9.setTransform(144,135);
 
-	this.timeline.addTween(cjs.Tween.get(this.instance_9).to({x:137},459).wait(21));
+	this.timeline.addTween(cjs.Tween.get(this.instance_9).to({x:104},459,cjs.Ease.get(1)).wait(21));
 
 }).prototype = p = new cjs.MovieClip();
-p.nominalBounds = new cjs.Rectangle(339,44,390,56);
+p.nominalBounds = new cjs.Rectangle(306,44,423,56);
 // library properties:
 lib.properties = {
 	id: 'D9851075F3414A109084DF29349A33BC',
