@@ -30,13 +30,6 @@ html.wf-loading * {
      opacity: 0;
  }	
 	
-#top {
-  	width: 100%;
-	float: left;
-	position: fixed; /* Set the navbar to fixed position */
-  	top: 0; /* Position the navbar at the top of the page */
-}
-	
 .url {
   	width: 100%;
 	padding-bottom: 10px;
@@ -77,15 +70,16 @@ html.wf-loading * {
 	width: 3%;
 }	
 
-.content {
+#content {
 	float: left;
     width: 100%;
 	display: flex;
 }
 
-.content2 {
+#content2 {
 	float: left;
     width: 100%;
+	display: flex;
 }
 	
 .url_footer {
@@ -137,11 +131,11 @@ a:active {
 <div class="space">&nbsp;</div>
 <div class="nav">Work Samples
 	 	<br><strong><a href="#content" target="_self">Digital Banners</a></strong>
-	 	<br><strong><a href="#content" target="_self">Brand Idents</a></strong>
+	 	<br><strong><a href="#content2" target="_self">Brand Idents</a></strong>
 	  	<br><strong><a href="#content" target="_self">Illustrations</a></strong>
-	  	<br><strong><a href="#content" target="_self">Photographics</a></strong>
+	  	<br><strong><a href="#content2" target="_self">Photographics</a></strong>
 	 	<br><strong><a href="#content" target="_self">Video Edits</a></strong>
-	  	<br><strong><a href="#content" target="_self">Mixes</a></strong></div>
+	  	<br><strong><a href="#content2" target="_self">Mixes</a></strong></div>
 
 <div class="space">&nbsp;</div>
 <div class="nav">Social Media
@@ -153,11 +147,11 @@ a:active {
 	 <br><strong><a href="https://www.mixcloud.com/peterwoon/" target="_blank">Mixcloud</a></strong>
 	 <br><br><strong><a href="mailto:projektxtension@gmail.com" target="_blank">Email</a></strong></div>
     
-<div class="content"><img src="images/Artboard1.png" width="100%" alt=""/></div>
-<div class="content"><img src="images/Artboard5.png" width="100%" alt=""/></div>
-<div class="content"><img src="images/Artboard15.png" width="100%" alt=""/></div>
-<div class="content"><img src="images/Artboard50.png" width="100%" alt=""/></div>
-<div class="content"><img src="images/Artboard60.png" width="100%" alt=""/></div>
+<div id="content"><img src="images/Artboard1.png" width="100%" alt=""/></div>
+<div id="content2"><video  width="100%" height="100%" autoplay loop muted>
+  <source src="myvibe.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video></div>
 	
 <div class="url_footer"><strong><a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Back To Top</a></strong></div>
 	
