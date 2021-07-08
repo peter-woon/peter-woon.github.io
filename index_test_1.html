@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Peter Woon - Digital Arts, Design & Music</title>
+<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+	
+<style type="text/css">	
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
+	
+html,body {
+    /* Size of largest container or bigger */
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow-x: hidden !important;
+	background-color: #000000;
+	padding: 30px;
+	font-family: 'Roboto', sans-serif; 
+	font-style: normal;
+	color: #FFFFFF;
+    }
+	
+html.wf-loading * {
+     opacity: 0;
+ }	
+	
+.url {
+  	width: 100%;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #FFFFFF;
+	font-family: 'Roboto', sans-serif;
+  	font-weight: 400 !important; 
+	font-size: 70%;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+
+.header {
+	float: left;
+  	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 900 !important; 
+	font-size: 10vw;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+	
+.subheader {
+	float: left;
+  	width: 100%;
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400 !important; 
+	font-size: 85%;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+
+button {
+        display: inline-block;
+		font-family: 'Roboto', sans-serif;
+		background-color: #000000;
+		border: none;
+        color: #FFFFFF;
+        text-align: left;
+        -webkit-transition: all 0.0s;
+        -moz-transition: all 0.0s;
+        -o-transition: all 0.0s;
+        transition: all 0.0s;
+        cursor: pointer;
+        margin-left: -7px;
+		font-size: 85%;
+		font-weight: 400 !important;
+}
+
+button::before,
+button::after {
+        background: #FFFFFF;
+        content: '';
+        position: absolute;
+        z-index: -1;
+      }
+      button:hover {
+        color: #666666;
+      }
+	
+.row1 {
+	float: left;
+    width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #FFFFFF;
+}	
+	
+#content1 {
+    width: 100%;
+    display: none;
+	float: left;
+	padding-top: 30px;
+	margin-bottom: -33px;
+}
+
+.row2 {
+	float: left;
+    width: 100%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+#content2 {
+    width: 100%;
+    display: none;
+	float: left;
+	padding-top: 30px;
+	margin-bottom: -33px;
+}
+
+	
+.space {
+	float: left;
+	width: 3%;
+}	
+	
+.backtop {
+	float: left;
+	width: 100%;
+	padding-top: 20px;
+	font-family: 'Roboto', sans-serif;
+  	font-weight: 400 !important; 
+	font-size: 80%;
+	line-height: 100%;
+	color: #FFFFFF;
+}
+	
+	
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: #666666;
+}
+a:active {
+	text-decoration: none;
+}
+
+</style>
+</head>
+
+<body>
+<div class="url">Digital Arts, Design &amp; Music © 2021 PETER-WOON.GITHUB.IO</div>
+	
+<div class="header">PROJEKT<br>
+XTENSIONS</div>
+	
+<div class="subheader">"If the world were clear, art would not exist." - Albert Camus</div>
+	
+<div class="row1">
+<button onclick="myFunction1()"><strong>Sample 1</strong></button>
+<script>
+function myFunction1() {
+  var x = document.getElementById("content1");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<div id="content1">
+<img src="images/Artboard12.png" width="100%" alt=""/>
+</div>  	
+</div>
+	
+<div class="row2">
+<button onclick="myFunction2()"><strong>Sample 2</strong></button>
+<script>
+function myFunction2() {
+  var x = document.getElementById("content2");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+<div id="content2">
+<img src="images/Artboard22.png" width="100%" alt=""/>
+</div>  	
+</div>
+
+	
+<div class="backtop"><strong><a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Back To Top</a></strong></div>
+	
+</body>
+</html>
