@@ -69,7 +69,6 @@ html.wf-loading * {
 	float: left;
   	width: 100%;
 	padding-top: 10px;
-	
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700 !important; 
 	font-size: 80%;
@@ -96,6 +95,7 @@ button {
 		border: none;
         color: #FFFFFF;
         text-align: left;
+		-webkit-tap-highlight-color: transparent;
         -webkit-transition: all 0.0s;
         -moz-transition: all 0.0s;
         -o-transition: all 0.0s;
@@ -103,8 +103,7 @@ button {
         cursor: pointer;
 		font-size: 80%;
 		font-weight: 400 !important;
-		outline: none;
-	 	-webkit-tap-highlight-color: transparent;
+		outline: none;	 	
 }
 
 button::before,
@@ -114,10 +113,40 @@ button::after {
         position: absolute;
         z-index: -1;
       }
-      button:hover {
+      
+button:hover {
         color: #666666;
       }
-	
+
+#show_hide1,
+#show_hide2,
+#show_hide3,
+#show_hide4,
+#show_hide5,
+#show_hide6,
+#show_hide7,
+#show_hide8,
+#show_hide9,
+#show_hide10 {
+		width: 20%;
+		float: right;
+		text-align: right;
+		font-size: 90%;
+  		}
+      	
+#show_hide1:hover,
+#show_hide2:hover,
+#show_hide3:hover,
+#show_hide4:hover,
+#show_hide5:hover,
+#show_hide6:hover,
+#show_hide7:hover,
+#show_hide8:hover,
+#show_hide9:hover,
+#show_hide10:hover {
+        color: #666666;
+      }
+
 .txt {
 	float: left;
     width: 100%;
@@ -129,137 +158,38 @@ button::after {
 	line-height: 140%;
 	color: #FFFFFF;
 }	
-	
-.row1 {
+
+.row1,
+.row2,
+.row3,
+.row4,
+.row5,
+.row6,
+.row7,
+.row8,
+.row9,
+.row10 {
 	float: left;
     width: 100%;
 	border-bottom: 1px solid #FFFFFF;
 }	
 	
-#content1 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row2 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content2 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-	
-.row3 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content3 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-	
-.row4 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content4 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row5 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content5 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row6 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content6 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row7 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content7 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-	
-.row8 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content8 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row9 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
-#content9 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.row10 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}
-
+#content1,
+#content2,
+#content3,
+#content4,
+#content5,
+#content6,
+#content7,
+#content8,
+#content9,
 #content10 {
     width: 100%;
     display: none;
 	float: left;
 	margin-bottom: -4px;
 }
-	
+
 .space {
 	float: left;
 	width: 3%;
@@ -308,7 +238,8 @@ a:active {
 
 <!--X-->
 <div class="row1">
-<button onclick="myFunction1()"><strong><span style="margin-left: -6px;">01 | PROFILE : Peter Woon, Digital Designer</span></strong></button>
+<button onclick="myFunction1(); myFunction11()"><strong><span style="margin-left: -6px;">01 | PROFILE : Peter Woon, Digital Designer</span></strong><div id="show_hide1">+ view</div></button>
+
 <script>
 function myFunction1() {
   var x = document.getElementById("content1");
@@ -319,8 +250,20 @@ function myFunction1() {
   }
 }
 </script>
+	
+<script>	
+function myFunction11() {
+  var x = document.getElementById("show_hide1");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content1">
-<img src="Artboard-04.png" width="100%" alt=""/>
+<img src="images/artboards/artboard-11.png" width="100%" alt=""/>
 <div class="txt"><strong>Digital Designer @ Prodigious Singapore</strong><br>
 <strong>Into:</strong> Bouldering, Long Jogs, Slow Burns, DJing, Supporting The Arsenal</div>
 </div>  	
@@ -328,7 +271,9 @@ function myFunction1() {
 
 <!--X-->
 <div class="row2">
-<button onclick="myFunction2()"><strong><span style="margin-left: -6px;">02 | DIGITAL ART : #headzathome</span></strong></button>
+<button onclick="myFunction2(); myFunction22()"><strong><span style="margin-left: -6px;">02 | DIGITAL ART : #headzathome</span></strong>
+<div id="show_hide2">+ view</div></button>
+
 <script>
 function myFunction2() {
   var x = document.getElementById("content2");
@@ -339,6 +284,18 @@ function myFunction2() {
   }
 }
 </script>
+
+<script>	
+function myFunction22() {
+  var x = document.getElementById("show_hide2");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content2">
 <img src="images/headzathome/Artboard200.jpg" width="100%" alt=""/>
 <div class="txt"><strong>#headzathome</strong> an Instagram competition 2020<br>
@@ -348,7 +305,9 @@ Metalheadz a UK Records Label - Branding Reimagined</div>
 
 <!--X-->
 <div class="row3">
-<button onclick="myFunction3()"><strong><span style="margin-left: -6px;">03 | BRAND IDENT : Smooth Goods Co.</span></strong></button>
+<button onclick="myFunction3(); myFunction33()"><strong><span style="margin-left: -6px;">03 | BRAND IDENT : Smooth Goods Co.</span></strong>
+<div id="show_hide3">+ view</div></button>
+
 <script>
 function myFunction3() {
   var x = document.getElementById("content3");
@@ -359,8 +318,20 @@ function myFunction3() {
   }
 }
 </script>
-<div id="content3">
-<img src="smooth/45078984_482536228909457_5940816828459646976_n.jpeg" width="100%" alt=""/>
+
+<script>	
+function myFunction33() {
+  var x = document.getElementById("show_hide3");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
+<div id="content3"> 
+<img src="images/smooth/45137729_482536218909458_5746954202425327616_n.jpeg" width="100%" alt=""/>
 <div class="txt"><strong>Smooth Goods Co.</strong><br>
 Rockclimbing Outdoors Lifestyle - Branding</div>
 </div>  	
@@ -368,7 +339,9 @@ Rockclimbing Outdoors Lifestyle - Branding</div>
 	
 <!--X-->
 <div class="row4">
-<button onclick="myFunction4()"><strong><span style="margin-left: -6px;">04 | ILLUSTRATIONS : Sketches</span></strong></button>
+<button onclick="myFunction4(); myFunction44()"><strong><span style="margin-left: -6px;">04 | ILLUSTRATIONS : Sketches</span></strong>
+<div id="show_hide4">+ view</div></button>
+
 <script>
 function myFunction4() {
   var x = document.getElementById("content4");
@@ -379,8 +352,20 @@ function myFunction4() {
   }
 }
 </script>
+	
+<script>	
+function myFunction44() {
+  var x = document.getElementById("show_hide4");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content4">
-<img src="images/s-tactics/414620_10150817313134976_205096012_o.jpg" width="100%" alt=""/>
+<img src="images/self_promos/shells.jpg" width="100%" alt=""/>
 <div class="txt"><strong>Self Promotion</strong><br>
 Comps of drawing studies</div>
 </div>  	
@@ -388,7 +373,8 @@ Comps of drawing studies</div>
 	
 <!--X-->
 <div class="row5">
-<button onclick="myFunction5()"><strong><span style="margin-left: -6px;">05 | TYPOGRAPHICS : Explorations</span></strong></button>
+<button onclick="myFunction5(); myFunction55()"><strong><span style="margin-left: -6px;">05 | TYPOGRAPHICS : Explorations</span></strong><div id="show_hide5">+ view</div></button>
+
 <script>
 function myFunction5() {
   var x = document.getElementById("content5");
@@ -399,8 +385,20 @@ function myFunction5() {
   }
 }
 </script>
+	
+<script>	
+function myFunction55() {
+  var x = document.getElementById("show_hide5");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content5">
-<img src="test.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-08.png" width="100%" alt=""/>
 <div class="txt"><strong>Boulderactive</strong><br>
 Logotype Event Logo Reimagined</div>
 </div>  	
@@ -408,7 +406,8 @@ Logotype Event Logo Reimagined</div>
 
 <!--X-->
 <div class="row6">
-<button onclick="myFunction6()"><strong><span style="margin-left: -6px;">06 | GEOMETRICS : Explorations</span></strong></button>
+<button onclick="myFunction6(); myFunction66()"><strong><span style="margin-left: -6px;">06 | GEOMETRICS : Explorations</span></strong><div id="show_hide6">+ view</div></button>
+
 <script>
 function myFunction6() {
   var x = document.getElementById("content6");
@@ -419,8 +418,20 @@ function myFunction6() {
   }
 }
 </script>
+	
+<script>	
+function myFunction66() {
+  var x = document.getElementById("show_hide6");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content6">
-<img src="images/digital_art/988335_10151971471389976_531281287_n.jpg" width="100%" alt=""/>
+<img src="images/self_promos/988335_10151971471389976_531281287_n.jpg" width="100%" alt=""/>
 <div class="txt"><strong>Digital Art Studies</strong><br>
 Generative Arts Practice</div>
 </div>  	
@@ -428,7 +439,8 @@ Generative Arts Practice</div>
 	
 <!--X-->
 <div class="row7">
-<button onclick="myFunction7()"><strong><span style="margin-left: -6px;">07 | PHOTOGRAPHICS : Explorations</span></strong></button>
+<button onclick="myFunction7(); myFunction77()"><strong><span style="margin-left: -6px;">07 | Digital Imagings : Explorations</span></strong><div id="show_hide7">+ view</div></button>
+
 <script>
 function myFunction7() {
   var x = document.getElementById("content7");
@@ -439,16 +451,29 @@ function myFunction7() {
   }
 }
 </script>
+	
+<script>	
+function myFunction77() {
+  var x = document.getElementById("show_hide7");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content7">
-<img src="images/bird.jpg" width="100%" alt=""/>
-<div class="txt"><strong>Mobile Photographics</strong><br>
-Digital Imagings Edits with Snapseed</div>
+<img src="images/self_promos/artstories_remix.jpg" width="100%" alt=""/>
+<div class="txt"><strong>Digital Imagings Edits</strong><br>
+With ArtStories SG</div>
 </div>  	
 </div>
 	
 <!--X-->
 <div class="row8">
-<button onclick="myFunction8()"><strong><span style="margin-left: -6px;">08 | ARSENAL SG : Web Social Lead</span></strong></button>
+<button onclick="myFunction8(); myFunction88()"><strong><span style="margin-left: -6px;">08 | ARSENAL SG : Web Social Lead</span></strong><div id="show_hide8">+ view</div></button>
+
 <script>
 function myFunction8() {
   var x = document.getElementById("content8");
@@ -459,8 +484,20 @@ function myFunction8() {
   }
 }
 </script>
+	
+<script>	
+function myFunction88() {
+  var x = document.getElementById("show_hide8");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content8">
-<img src="bruised.jpg" width="100%" alt=""/>
+<img src="images/arsenal_sg/bruised.jpg" width="100%" alt=""/>
 <div class="txt"><strong>Bruised Banana</strong><br>
 An Arsenal Inspired Meme</div>
 </div>  	
@@ -468,7 +505,8 @@ An Arsenal Inspired Meme</div>
 	
 <!--X-->
 <div class="row9">
-<button onclick="myFunction9()"><strong><span style="margin-left: -6px;">09 | TWITCH.TV : Subcity x K.O.B</span></strong></button>
+<button onclick="myFunction9(); myFunction99()"><strong><span style="margin-left: -6px;">09 | TWITCH.TV : Subcity x K.O.B</span></strong><div id="show_hide9">+ view</div></button>
+
 <script>
 function myFunction9() {
   var x = document.getElementById("content9");
@@ -479,16 +517,29 @@ function myFunction9() {
   }
 }
 </script>
+	
+<script>	
+function myFunction99() {
+  var x = document.getElementById("show_hide9");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
+	
 <div id="content9">
 <a href="https://www.instagram.com/p/CDgBADXHOQX/" target="_blank"><img src="images/twitch/Screenshot_20200628-092433.png" width="100%" alt=""/></a>
 <div class="txt"><strong>DJ Livestream</strong><br>
-Set opener for the charity and dj twitch stream event June 2020</div>
+Set opener for the charity food drive & dj twitch stream event June 2020</div>
 </div>  	
 </div>
 	
 <!--X-->
 <div class="row10">
-<button onclick="myFunction10()"><strong><span style="margin-left: -6px;">10 | SOUNDCLOUD : Basscoats Mixtapes</span></strong></button>
+<button onclick="myFunction10(); myFunction100()"><strong><span style="margin-left: -6px;">10 | SOUNDCLOUD : Bass Coats</span></strong><div id="show_hide10">+ view</div></button>
+	
 <script>
 function myFunction10() {
   var x = document.getElementById("content10");
@@ -499,8 +550,19 @@ function myFunction10() {
   }
 }
 </script>
+	
+<script>	
+function myFunction100() {
+  var x = document.getElementById("show_hide10");
+  if (x.innerHTML === "+ view") {
+    x.innerHTML = "- close";
+  } else {
+    x.innerHTML = "+ view";
+  }
+}
+</script>
 <div id="content10">
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525988&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
+<iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525988&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
 <div class="txt"><strong>Playlist</strong><br>
 DJ Mixtapes</div>
 </div>  	
