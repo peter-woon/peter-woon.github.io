@@ -28,7 +28,7 @@ html,body {
     }
 	
 html.wf-loading * {
-     opacity: 0;
+    opacity: 0;
  }
 	
 .url {
@@ -75,6 +75,25 @@ html.wf-loading * {
 	line-height: 200%;
 	color: #FFFFFF;
 }
+
+.logo {
+	float: left;
+  	width: 40px;
+}
+	
+.socials .logo .img-hover {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
+
+.socials .logo:hover .img-hover {
+    display: inline;
+	position: absolute;
+	margin-left: -35px;
+}
+	
+
 	
 input,
 textarea,
@@ -85,38 +104,38 @@ a {
 }
 	
 button {
-		float: left;
-  		width: 100%;
-		padding-top: 20px;
-		padding-bottom: 20px;
-        display: inline-block;
-		font-family: 'Roboto', sans-serif;
-		background-color: #000000;
-		border: none;
-        color: #FFFFFF;
-        text-align: left;
-		-webkit-tap-highlight-color: transparent;
-        -webkit-transition: all 0.0s;
-        -moz-transition: all 0.0s;
-        -o-transition: all 0.0s;
-        transition: all 0.0s;
-        cursor: pointer;
-		font-size: 80%;
-		font-weight: 400 !important;
-		outline: none;	 	
+	float: left;
+  	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #000000;
+	border: none;
+    display: inline-block;
+	font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    text-align: left;
+	font-size: 80%;
+	font-weight: 400 !important;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.0s;
+	-webkit-tap-highlight-color: transparent;
+    -webkit-transition: all 0.0s;
+    -moz-transition: all 0.0s;
+    -o-transition: all 0.0s;
 }
 
 button::before,
 button::after {
-        background: #FFFFFF;
-        content: '';
-        position: absolute;
-        z-index: -1;
-      }
+    background: #FFFFFF;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
       
 button:hover {
-        color: #666666;
-      }
+    color: #666666;
+}
 
 #show_hide1,
 #show_hide2,
@@ -128,13 +147,13 @@ button:hover {
 #show_hide8,
 #show_hide9,
 #show_hide10 {
-		width: 20%;
-		float: right;
+	width: 20%;
+	float: right;
 	margin-right: 0px;
 	margin-top: 0px;
 	font-size: 100%;
-		text-align: right;
-  		}
+	text-align: right;
+}
       	
 #show_hide1:hover,
 #show_hide2:hover,
@@ -146,8 +165,8 @@ button:hover {
 #show_hide8:hover,
 #show_hide9:hover,
 #show_hide10:hover {
-        color: #666666;
-      }
+    color: #666666;
+}
 
 .txt {
 	float: left;
@@ -236,7 +255,22 @@ a:active {
 <div class="subheader">"If the world were clear, art would not exist." - Albert Camus</div>
 	
 <div class="socials">Socials & Contact @<br>
-<a href="https://www.facebook.com/projektxtension" target="_blank"><img src="navs/fb.png" width="35vw" alt=""/></a>   <a href="https://www.instagram.com/pete_s_tactics/" target="_blank"><img src="navs/ig.png" width="35vw" alt=""/></a>   <a href="https://www.linkedin.com/in/peter-woon-16ab2b17/" target="_blank"><img src="navs/linkedin.png" width="35vw" alt=""/></a>   <a href="https://www.twitch.tv/pete_s_tactics" target="_blank"><img src="navs/twitch.png" width="35vw" alt=""/></a>   <a href="https://soundcloud.com/s-tactics/" target="_blank"><img src="navs/soundcloud.png" width="35vw" alt=""/></a>   <a href="https://www.mixcloud.com/peterwoon/" target="_blank"><img src="navs/mixcloud.png" width="35vw" alt=""/></a>   <a href="https://twitter.com/s_tactics" target="_blank"><img src="navs/twitter.png" width="35vw" alt=""/></a>   <a href="mailto:projektxtension@gmail.com" target="_blank"><img src="navs/mail.png" width="35vw" alt=""/></a></div>
+<div class="logo"><a href="https://www.facebook.com/projektxtension" target="_blank"><img src="navs/fb.png" width="35px" class="img-logo" alt=""/><img src="navs/fb1.png" width="35px" class="img-hover" alt=""></a></div>
+	
+<div class="logo"><a href="https://www.instagram.com/pete_s_tactics/" target="_blank"><img src="navs/ig.png" width="35vw" class="img-logo" alt=""/><img src="navs/ig1.png" width="35px" class="img-hover" alt=""></a></div> 
+	
+<div class="logo"><a href="https://www.linkedin.com/in/peter-woon-16ab2b17/" target="_blank"><img src="navs/linkedin.png" width="35vw" class="img-logo" alt=""/><img src="navs/linkedin1.png" width="35px" class="img-hover" alt=""></a></div>   
+	
+<div class="logo"><a href="https://www.twitch.tv/pete_s_tactics" target="_blank"><img src="navs/twitch.png" width="35vw" class="img-logo" alt=""/><img src="navs/twitch1.png" width="35px" class="img-hover" alt=""></a></div>
+	
+<div class="logo"><a href="https://soundcloud.com/s-tactics/" target="_blank"><img src="navs/soundcloud.png" width="35vw" class="img-logo" alt=""/><img src="navs/soundcloud1.png" width="35px" class="img-hover" alt=""></a></div> 
+	
+<div class="logo"><a href="https://www.mixcloud.com/peterwoon/" target="_blank"><img src="navs/mixcloud.png" width="35vw" class="img-logo" alt=""/><img src="navs/mixcloud1.png" width="35px" class="img-hover" alt=""></a></div>   
+
+<div class="logo"><a href="https://twitter.com/s_tactics" target="_blank"><img src="navs/twitter.png" width="35vw" class="img-logo" alt=""/><img src="navs/twitter1.png" width="35px" class="img-hover" alt=""></a></div>  
+	
+<div class="logo"><a href="mailto:projektxtension@gmail.com" target="_blank"><img src="navs/mail.png" width="35vw" class="img-logo" alt=""/><img src="navs/mail1.png" width="35px" class="img-hover" alt=""></a></div>
+</div>
 
 <!--X-->
 <div class="row1">
