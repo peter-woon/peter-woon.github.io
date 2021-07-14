@@ -230,7 +230,30 @@ a:active {
 	text-decoration: none;
 }
 
-</style>
+.slideshow {
+	position:relative;
+}
+	
+.slideshowActive {
+	position:relative;
+	height: 100%;
+}
+
+.slideshowActive .slideshow > * {
+	position:absolute;
+	left:0;
+	z-index:1;
+	opacity:0;
+	transition:opacity 0s 0.2s;
+}
+
+.slideshowActive .slideshow .current {
+	position:relative;
+	z-index:2;
+	opacity:1;
+	transition:opacity 0.2s;
+}	
+</style>	
 </head>
 
 <body>
@@ -309,7 +332,39 @@ function myFunction11() {
 </script>
 	
 <div id="content1">
-<img src="images/artboards/artboard-11.png" width="100%" alt=""/>
+<div class="slideshow">
+<img src="images/artboards/artboard-03.png" width="100%" alt="">
+<img src="images/artboards/artboard-04.png" width="100%" alt="">
+<img src="images/artboards/artboard-05.png" width="100%" alt="">
+<img src="images/artboards/artboard-06.png" width="100%" alt="">
+<img src="images/artboards/artboard-07.png" width="100%" alt="">
+<img src="images/artboards/artboard-11.png" width="100%" alt="">
+<img src="images/artboards/artboard-12.png" width="100%" alt="">	
+<img src="images/artboards/artboard-13.png" width="100%" alt="">
+<img src="images/artboards/artboard-14.png" width="100%" alt="">	
+<img src="images/artboards/artboard-15.png" width="100%" alt="">
+<img src="images/artboards/artboard-17.png" width="100%" alt="">	
+<img src="images/artboards/artboard-18.png" width="100%" alt="">	
+<img src="images/artboards/artboard-19.png" width="100%" alt="">	
+<img src="images/artboards/artboard-20.png" width="100%" alt="">	
+<img src="images/artboards/artboard-21.png" width="100%" alt="">	
+<img src="images/artboards/artboard-22.png" width="100%" alt="">	
+<img src="images/artboards/artboard-23.png" width="100%" alt="">
+<img src="images/artboards/artboard-26.png" width="100%" alt="">
+<img src="images/artboards/artboard-27.png" width="100%" alt="">
+<img src="images/artboards/artboard-28.png" width="100%" alt="">
+<img src="images/artboards/artboard-31.png" width="100%" alt="">
+<img src="images/artboards/artboard-33.png" width="100%" alt="">
+<img src="images/artboards/artboard-34.png" width="100%" alt="">
+<img src="images/artboards/artboard-43.png" width="100%" alt="">
+<img src="images/artboards/artboard-49.png" width="100%" alt="">
+<img src="images/artboards/artboard-50.png" width="100%" alt="">	
+<img src="images/artboards/artboard-56.png" width="100%" alt="">	
+<img src="images/artboards/artboard-57.png" width="100%" alt="">	
+<img src="images/artboards/artboard-59.png" width="100%" alt="">	
+<img src="images/artboards/artboard-60.png" width="100%" alt="">
+</div>
+	
 <div class="txt"><strong>Digital Designer @ Prodigious Singapore</strong><br>
 <strong>Into:</strong> Bouldering, Long Jogs, Slow Burns, DJing, Supporting The Arsenal</div>
 </div>  	
@@ -343,7 +398,14 @@ function myFunction22() {
 </script>
 	
 <div id="content2">
-<img src="images/headzathome/headzathome-20.png" width="100%" alt=""/>
+<div class="slideshow">
+<img src="images/headzathome/Artboard1.jpg" width="100%" alt="">
+<img src="images/headzathome/Artboard2.jpg" width="100%" alt="">
+<img src="images/headzathome/Artboard3.jpg" width="100%" alt="">
+<img src="images/headzathome/Artboard4.jpg" width="100%" alt="">
+<img src="images/headzathome/Artboard5.jpg" width="100%" alt="">
+</div>
+	
 <div class="txt"><strong>#headzathome</strong> an Instagram competition 2020<br>
 Metalheadz a UK Records Label - Branding Reimagined</div>
 </div>  	
@@ -377,9 +439,16 @@ function myFunction33() {
 </script>
 	
 <div id="content3"> 
-<img src="images/smooth/45137729_482536218909458_5746954202425327616_n.jpeg" width="100%" alt=""/>
+<div class="slideshow">
+<img src="images/smooth/Branding1.jpg" width="100%" alt="">
+<img src="images/smooth/Branding2.jpg" width="100%" alt="">
+<img src="images/smooth/Branding3.jpg" width="100%" alt="">
+<img src="images/smooth/Branding4.jpg" width="100%" alt="">
+<img src="images/smooth/Branding5.jpg" width="100%" alt="">
+<img src="images/smooth/Branding6.jpg" width="100%" alt="">
+</div>
 <div class="txt"><strong>Smooth Goods Co.</strong><br>
-Rockclimbing Outdoors Lifestyle - Branding</div>
+Branding - Rockclimbing Lifestyle Products</div>
 </div>  	
 </div>
 	
@@ -411,9 +480,13 @@ function myFunction44() {
 </script>
 	
 <div id="content4">
-<img src="images/self_promos/shells.jpg" width="100%" alt=""/>
+<div class="slideshow">
+<img src="images/self_promos/shells.jpg" width="100%" alt="">
+<img src="images/self_promos/caricatures.jpg" width="100%" alt="">
+<img src="images/self_promos/shells2.jpg" width="100%" alt="">
+</div>
 <div class="txt"><strong>Self Promotion</strong><br>
-Comps of drawing studies</div>
+Composite of drawing studies</div>
 </div>  	
 </div>
 	
@@ -444,9 +517,18 @@ function myFunction55() {
 </script>
 	
 <div id="content5">
+<div class="slideshow">
+<img src="images/artboards/COMBOs2019_Edits-02.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-03.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-04.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-05.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-06.png" width="100%" alt=""/>
+<img src="images/artboards/COMBOs2019_Edits-07.png" width="100%" alt=""/>
 <img src="images/artboards/COMBOs2019_Edits-08.png" width="100%" alt=""/>
-<div class="txt"><strong>Boulderactive</strong><br>
-Logotype Event Logo Reimagined</div>
+</div>
+
+<div class="txt"><strong>Brand Idents</strong><br>
+Typographic Renders</div>
 </div>  	
 </div>
 
@@ -477,9 +559,15 @@ function myFunction66() {
 </script>
 	
 <div id="content6">
+<div class="slideshow">
 <img src="images/self_promos/988335_10151971471389976_531281287_n.jpg" width="100%" alt=""/>
-<div class="txt"><strong>Digital Art Studies</strong><br>
-Generative Arts Practice</div>
+<img src="images/self_promos/488051_10151532530624976_601515361_n.jpg" width="100%" alt=""/>
+<img src="images/self_promos/art2.png" width="100%" alt=""/>
+<img src="images/artboards/2.jpg" width="100%" alt=""/>
+</div>
+
+<div class="txt"><strong>Digital Art</strong><br>
+Self Studies & Practice</div>
 </div>  	
 </div>
 	
@@ -615,6 +703,37 @@ DJ Mixtapes</div>
 </div>
 	
 <div class="backtop"><strong><a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Back To Top</a></strong></div>
+
+<script>	
+(function(d) {
+
+	d.body.classList.add('slideshowActive');
+	
+	var
+		slideshowInterval = 5000;
+		slideshows = d.getElementsByClassName('slideshow');
+	
+	for (var i = 0, show; show = slideshows[i]; i++) {
+		show['data-slideshowCurrent'] = show.firstElementChild;
+		show.firstElementChild.classList.add('current');
+	}
+	
+	function slideUpdate() {
+		for (var i = 0, show; show = slideshows[i]; i++) {
+			var current = show['data-slideshowCurrent']; 
+			current.classList.remove('current');
+			if (!(show['data-slideshowCurrent'] = current.nextElementSibling))
+				show['data-slideshowCurrent'] = show.firstElementChild;
+			show['data-slideshowCurrent'].classList.add('current');
+		}
+	}
+	
+	window.addEventListener('load', function() {
+		setInterval(slideUpdate, slideshowInterval);
+	}, false);
+	
+})(document);
+</script>
 	
 </body>
 </html>
