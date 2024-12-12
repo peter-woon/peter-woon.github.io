@@ -1,748 +1,1087 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<title>Peter Woon - Digital Arts, Design & Music</title>
-<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
-<!--fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
-	
-<style type="text/css">	
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900');
-	
-html,body {
-    /* Size of largest container or bigger */
-	max-width: 1080px;
-	margin: 0 auto;
-	overflow-x: hidden !important;
-	background-color: #000000;
-	padding: 20px;
-	font-family: 'Roboto', sans-serif; 
-	font-style: normal;
-	color: #FFFFFF;
-	-webkit-font-smoothing: antialiased;
+  <meta charset="utf-8">
+  <title>Peter Woon - Digital Designer</title>
+  <meta name="generator" content="Google Web Designer 16.1.0.0530">
+  <style id="gwd-text-style">
+    p {
+      margin: 0px;
     }
-	
-html.wf-loading * {
-    opacity: 0;
- }
-	
-.url {
-  	width: 100%;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #FFFFFF;
-	font-family: 'Roboto', sans-serif;
-  	font-weight: 400 !important; 
-	font-size: 75%;
-	line-height: 100%;
-	color: #FFFFFF;
-}
-
-.header {
-	float: left; 
-  	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 900 !important; 
-	font-size: 10vw;
-	line-height: 100%;
-	color: #FFFFFF;
-}
-	
-.header_img {
-	float: left; 
-  	width: 100%;
-	margin-top: -20%;
-}
-
-.subheader {
-	float: left;
-  	width: 100%;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 400 !important; 
-	font-size: 75%;
-	line-height: 100%;
-	color: #FFFFFF;
-}
-	
-.socials {
-	float: left;
-  	width: 100%;
-	padding-top: 10px;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 700 !important; 
-	font-size: 80%;
-	line-height: 200%;
-	color: #FFFFFF;
-}
-
-.logo {
-	float: left;
-  	width: 40px;
-}
-	
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-	
-button {
-	float: left;
-  	width: 100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: #000000;
-	border: none;
-    display: inline-block;
-	font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
-    text-align: left;
-	font-size: 80%;
-	font-weight: 400 !important;
-	outline: none;
-	cursor: pointer;
-	transition: all 0.0s;
-	-webkit-tap-highlight-color: transparent;
-    -webkit-transition: all 0.0s;
-    -moz-transition: all 0.0s;
-    -o-transition: all 0.0s;
-}
-
-button::before,
-button::after {
-    background: #FFFFFF;
-    content: '';
-    position: absolute;
-    z-index: -1;
-}
-      
-button:hover {
-    color: #666666;
-}
-
-#show_hide1,
-#show_hide2,
-#show_hide3,
-#show_hide4,
-#show_hide5,
-#show_hide6,
-#show_hide7,
-#show_hide8,
-#show_hide9,
-#show_hide10 {
-	width: 20%;
-	float: right;
-	margin-right: 0px;
-	margin-top: 0px;
-	font-size: 100%;
-	text-align: right;
-}
-      	
-#show_hide1:hover,
-#show_hide2:hover,
-#show_hide3:hover,
-#show_hide4:hover,
-#show_hide5:hover,
-#show_hide6:hover,
-#show_hide7:hover,
-#show_hide8:hover,
-#show_hide9:hover,
-#show_hide10:hover {
-    color: #666666;
-}
-
-.txt {
-	float: left;
-    width: 100%;
-	padding-top: 20px;
-	padding-bottom: 24px;
-	font-family: 'Roboto', sans-serif;
-  	font-weight: 400 !important; 
-	font-size: 75%;
-	line-height: 140%;
-	color: #FFFFFF;
-}	
-
-.row1,
-.row2,
-.row3,
-.row4,
-.row5,
-.row6,
-.row7,
-.row8,
-.row9,
-.row10 {
-	float: left;
-    width: 100%;
-	border-bottom: 1px solid #FFFFFF;
-}	
-	
-#content1,
-#content2,
-#content3,
-#content4,
-#content5,
-#content6,
-#content7,
-#content8,
-#content9,
-#content10 {
-    width: 100%;
-    display: none;
-	float: left;
-	margin-bottom: -4px;
-}
-
-.space {
-	float: left;
-	width: 3%;
-}	
-	
-.backtop {
-	float: left;
-	width: 100%;
-	padding-top: 20px;
-	font-family: 'Roboto', sans-serif;
-  	font-weight: 400 !important; 
-	font-size: 75%;
-	line-height: 100%;
-	color: #FFFFFF;
-}
-	
-	
-a:link {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-a:visited {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-a:hover {
-	text-decoration: none;
-	color: #666666;
-}
-a:active {
-	text-decoration: none;
-}
-
-.slideshow {
-	position:relative;
-}
-	
-.slideshowActive {
-	position:relative;
-	height: 100%;
-}
-
-.slideshowActive .slideshow > * {
-	position:absolute;
-	left:0;
-	z-index:1;
-	opacity:0;
-	transition:opacity 0s 0.2s;
-}
-
-.slideshowActive .slideshow .current {
-	position:relative;
-	z-index:2;
-	opacity:1;
-	transition:opacity 0.2s;
-}	
-</style>	
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style>
+    html, body {
+      max-width: 1080px;
+      margin: 0px auto;
+      background-color: rgb(0, 0, 0);
+      padding: 25px;
+      font-family: Roboto, sans-serif;
+      font-style: normal;
+      color: rgb(255, 255, 255);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden !important;
+    }
+    html.wf-loading * {
+      opacity: 0;
+    }
+    .url {
+      width: 100%;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgb(255, 255, 255);
+      font-family: Roboto, sans-serif;
+      font-size: 75%;
+      line-height: 100%;
+      color: rgb(255, 255, 255);
+      font-weight: 400 !important;
+    }
+    .header {
+      float: left;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: Roboto, sans-serif;
+      font-size: 10vw;
+      line-height: 100%;
+      color: rgb(255, 255, 255);
+      font-weight: 900 !important;
+    }
+    .header_img {
+      float: left;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .subheader {
+      float: left;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-family: Roboto, sans-serif;
+      font-size: 75%;
+      line-height: 100%;
+      color: rgb(255, 255, 255);
+      font-weight: 400 !important;
+    }
+    .socials {
+      float: left;
+      width: 100%;
+      padding-top: 10px;
+      font-family: Roboto, sans-serif;
+      font-size: 80%;
+      line-height: 200%;
+      color: rgb(255, 255, 255);
+      font-weight: 400 !important;
+    }
+    .logo {
+      float: left;
+      width: 40px;
+    }
+    input, textarea, button, select, a {
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    button {
+      float: left;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: rgb(0, 0, 0);
+      border: none;
+      display: inline-block;
+      font-family: Roboto, sans-serif;
+      color: rgb(255, 255, 255);
+      text-align: left;
+      font-size: 80%;
+      outline: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: all 0s ease 0s;
+      font-weight: 400 !important;
+    }
+    button::before, button::after {
+      background: rgb(255, 255, 255);
+      content: "";
+      position: absolute;
+      z-index: -1;
+    }
+    button:hover {
+      color: rgb(102, 102, 102);
+    }
+    #show_hide1, #show_hide2, #show_hide3, #show_hide4, #show_hide5, #show_hide6, #show_hide7, #show_hide8, #show_hide9, #show_hide10, #show_hide11, #show_hide12, #show_hide13, #show_hide14, #show_hide15 {
+      width: 20%;
+      float: right;
+      margin-right: 0px;
+      margin-top: 0px;
+      font-size: 100%;
+      text-align: right;
+    }
+    #show_hide1:hover, #show_hide2:hover, #show_hide3:hover, #show_hide4:hover, #show_hide5:hover, #show_hide6:hover, #show_hide7:hover, #show_hide8:hover, #show_hide9:hover, #show_hide10:hover, #show_hide11:hover, #show_hide12:hover, #show_hide13:hover, #show_hide14:hover, #show_hide15:hover {
+      color: rgb(102, 102, 102);
+    }
+    .txt {
+      float: left;
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 24px;
+      font-family: Roboto, sans-serif;
+      font-size: 75%;
+      line-height: 140%;
+      color: rgb(255, 255, 255);
+      font-weight: 400 !important;
+    }
+    .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12, .row13, .row14, .row15 {
+      float: left;
+      width: 100%;
+      border-bottom: 1px solid rgb(255, 255, 255);
+    }
+    #content1, #content2, #content3, #content4, #content5, #content6, #content7, #content8, #content9, #content10, #content11, #content12, #content13, #content14, #content15 {
+      width: 100%;
+      display: none;
+      float: left;
+      margin-bottom: -4px;
+    }
+    .space {
+      float: left;
+      width: 3%;
+    }
+    .backtop {
+      float: left;
+      width: 100%;
+      padding-top: 20px;
+      font-family: Roboto, sans-serif;
+      font-size: 75%;
+      line-height: 100%;
+      color: rgb(255, 255, 255);
+      font-weight: 400 !important;
+    }
+    a:link {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    a:visited {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+      color: rgb(102, 102, 102);
+    }
+    a:active {
+      text-decoration: none;
+    }
+    .slideshow {
+      position: relative;
+    }
+    .slideshowActive {
+      position: relative;
+      height: 100%;
+    }
+    .slideshowActive .slideshow > * {
+      position: absolute;
+      left: 0px;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0s ease 0.2s;
+    }
+    .slideshowActive .slideshow .current {
+      position: relative;
+      z-index: 2;
+      opacity: 1;
+      transition: opacity 0.2s ease 0s;
+    }
+    .slideshow_blocs {
+      position: relative;
+    }
+    .slideshow_blocsActive {
+      position: relative;
+      height: 100%;
+    }
+    .slideshow_blocsActive .slideshow_blocs > * {
+      position: absolute;
+      left: 0px;
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0s ease 0s;
+    }
+    .slideshow_blocsActive .slideshow_blocs .current {
+      position: relative;
+      z-index: 2;
+      opacity: 1;
+      transition: opacity 0s ease 0s;
+    }
+  </style>
 </head>
 
-<body>
-<div class="url">Digital Arts, Design &amp; Music © 2024 PETER-WOON.GITHUB.IO</div>
-	
-<div class="header">RESET <br>: 2024
-<img class="header_img" src="images/artboards/artboard2-26.png" width="100%" alt="">
-</div>
-	
-<div class="subheader">"If the world were clear, art would not exist." - Albert Camus</div>
-	
-<div class="socials">Socials & Contact @<br>
-<div class="logo"><a href="https://www.facebook.com/projektxtension" target="_blank">
-<img onMouseOver="this.src='navs/fb1.png'"
- 	 onMouseOut="this.src='navs/fb.png'"
- 	 src="navs/fb.png" width="35vw" alt=""></a></div>
-	
-<div class="logo"><a href="https://www.instagram.com/pete_s_tactics/" target="_blank">
-<img onMouseOver="this.src='navs/ig1.png'"
- 	 onMouseOut="this.src='navs/ig.png'"
- 	 src="navs/ig.png" width="35vw" alt=""></a></div> 
-	
-<div class="logo"><a href="https://www.linkedin.com/in/peter-woon-16ab2b17/" target="_blank">
-<img onMouseOver="this.src='navs/linkedin1.png'"
- 	 onMouseOut="this.src='navs/linkedin.png'"
- 	 src="navs/linkedin.png" width="35vw" alt=""></a></div>   
-	
-<div class="logo"><a href="https://www.twitch.tv/pete_s_tactics" target="_blank">
-<img onMouseOver="this.src='navs/twitch1.png'"
- 	 onMouseOut="this.src='navs/twitch.png'"
- 	 src="navs/twitch.png" width="35vw" alt=""></a></div>
-	
-<div class="logo"><a href="https://soundcloud.com/s-tactics/" target="_blank">
-<img onMouseOver="this.src='navs/soundcloud1.png'"
- 	 onMouseOut="this.src='navs/soundcloud.png'"
- 	 src="navs/soundcloud.png" width="35vw" alt=""></a></div> 
-	
-<div class="logo"><a href="https://www.mixcloud.com/peterwoon/" target="_blank">
-<img onMouseOver="this.src='navs/mixcloud1.png'"
- 	 onMouseOut="this.src='navs/mixcloud.png'"
- 	 src="navs/mixcloud.png" width="35vw" alt=""></a></div>   
+<body class="htmlNoPages">
+  <div class="url">Digital Arts, Design &amp; Music © 2025 PETER-WOON.GITHUB.IO</div>
+  <div class="header">RESETS:2025
+    <div class="header_img">
+    </div>
+    <div class="slideshow">
+      <img src="images/personal/artboard-1.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-2.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-3.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-4.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-5.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-6.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-7.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-8.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-9.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-10.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-11.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-12.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-13.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-14.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-15.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-16.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-17.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-18.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-19.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-20.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-21.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-22.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-23.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-24.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-25.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-26.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-27.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-28.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-29.jpg" width="100%" alt="">
+      <img src="images/personal/artboard-30.jpg" width="100%" alt="">
+    </div>
+  </div>
+  <div class="subheader">"If the world were clear, art would not exist." - Albert Camus</div>
+  <div class="socials">Socials &amp; Contact @<br>
+    <div class="logo">
+      <a href="https://www.facebook.com/projektxtension" target="_blank">
+        <img src="navs/fb.png" width="35vw" alt="" onmouseover="this.src='navs/fb1.png'" onmouseout="this.src='navs/fb.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://www.instagram.com/pete_s_tactics/" target="_blank">
+        <img src="navs/ig.png" width="35vw" alt="" onmouseover="this.src='navs/ig1.png'" onmouseout="this.src='navs/ig.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://www.linkedin.com/in/peter-woon-16ab2b17/" target="_blank">
+        <img src="navs/linkedin.png" width="35vw" alt="" onmouseover="this.src='navs/linkedin1.png'" onmouseout="this.src='navs/linkedin.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://soundcloud.com/s-tactics/" target="_blank">
+        <img src="navs/soundcloud.png" width="35vw" alt="" onmouseover="this.src='navs/soundcloud1.png'" onmouseout="this.src='navs/soundcloud.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://www.mixcloud.com/peterwoon/" target="_blank">
+        <img src="navs/mixcloud.png" width="35vw" alt="" onmouseover="this.src='navs/mixcloud1.png'" onmouseout="this.src='navs/mixcloud.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="https://twitter.com/s_tactics" target="_blank">
+        <img src="navs/twitter.png" width="35vw" alt="" onmouseover="this.src='navs/twitter1.png'" onmouseout="this.src='navs/twitter.png'">
+      </a>
+    </div>
+    <div class="logo">
+      <a href="mailto:projektxtension@gmail.com" target="_blank">
+        <img src="navs/mail.png" width="35vw" alt="" onmouseover="this.src='navs/mail1.png'" onmouseout="this.src='navs/mail.png'">
+      </a>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row1">
+    <button onclick="myFunction1(); myFunction11()"><strong><span style="margin-left: -6px;">01 | PROFILE : Peter Woon, Digital Designer</span></strong>
+      <div id="show_hide1">+ view</div>
+    </button>
+    <script>
+      function myFunction1() {
+        var x = document.getElementById("content1");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction11() {
+        var x = document.getElementById("show_hide1");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content1">
+      <div class="slideshow">
+        <video width="100%" playsinline="" loop="" muted="" autoplay="">
+          <source src="https://dl.dropboxusercontent.com/scl/fi/ez2lqom76k9p54m5g4ds4/PeterWoon_Digital_CloseUp.mp4?rlkey=kzq51iii6n5dxru6w4ec5utkw&st=w7pg8mau&dl=0" type="video/mp4">
+        </video>
+        <video width="100%" playsinline="" loop="" muted="" autoplay="">
+          <source src="https://dl.dropboxusercontent.com/scl/fi/9sndam6gg6ndfp8dy6a4v/PeterWoon_DIgital_Wide.mp4?rlkey=b7ljoqhp14qujar24d9fh8a1m&st=6kdrfesp&dl=0" type="video/mp4">
+        </video>
+      </div>
+      <div class="txt">
+        Peter Woon is a highly experienced digital designer with over 10 years of experience in the field. He is a specialist in digital banner production and animation. His knowledge in design technology includes Google Web Designer, After Effects, Photoshop, Illustrator and InDesign. He has worked on projects for some of the biggest names in the industry, including Emirates, Honda Kah Motors, Standard Chartered Bank, Singapore Airlines and TigerAir. With a keen eye for detail and a passion for creating engaging digital experiences, Peter is an asset to any team.<br><br> Peter has:<br> • 10+ years of industry experience.<br> • Hybrid skills in Graphic Design, Brand Identity and Illustrations.<br> • Organized, conceptual, proactive, and detail-driven.<br> • Thrives under pressure and embraces challenges.<br> • Solution-focused, motivated, and eager to improve.<br> • Collaborative with a curiosity for innovation.<br> • Passionate about technology, media, and advertising.<br> • Loves crafting innovative digital work.<br> • Thrives in a team-driven environment.<br><br> Peter is keen to learn more about interactive generative arts and motion graphics. In his free time, Peter dabbles in DJing, Bouldering and supports The Arsenal Football Club from the English Premier League.
+      </div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row2">
+    <button onclick="myFunction2(); myFunction22()"><strong><span style="margin-left: -6px;">02 | EG+ (Sep 2013 - Apr 2019)</span></strong>
+      <div id="show_hide2">+ view</div>
+    </button>
+    <script>
+      function myFunction2() {
+        var x = document.getElementById("content2");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction22() {
+        var x = document.getElementById("show_hide2");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content2">
+      <video width="100%" playsinline="" loop="" muted="" autoplay="">
+        <source src="https://dl.dropboxusercontent.com/scl/fi/uahq50e3ao3qyr51wie9r/cny2016.mp4?rlkey=daes31ar61yixmxm6d328zpv3&st=19i5rm6d&dl=0" type="video/mp4">
+      </video>
+      <div class="txt">
+        Role &amp; Responsibility as Digital Designer at EG+ was the localisation and production of digital campaigns content for: 100Plus | ANZ | Caltex | Cartier | In-House Campaigns | Energizer | Etihad | Honda Kah Motors | Hewlett Packard | Mastercard | Michelin | SAP | Standard Chartered Bank | Singapore Airlines | Skoda | Spotify | Singapore Tourism Board | Tigerair | Tourism Australia | Van Cleef &amp; Arpels | Visa<br>
+      </div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row3">
+    <button onclick="myFunction3(); myFunction33()"><strong><span style="margin-left: -6px;">03 | PRODIGIOUS (Apr 2019 - Dec 2023)</span></strong>
+      <div id="show_hide3">+ view</div>
+    </button>
+    <script>
+      function myFunction3() {
+        var x = document.getElementById("content3");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction33() {
+        var x = document.getElementById("show_hide3");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content3">
+      <video width="100%" playsinline="" loop="" muted="" autoplay="">
+        <source src="https://dl.dropboxusercontent.com/scl/fi/ug54fgbk4r4oz71zlx0zs/1080x1080.mp4?rlkey=61h0cov2n2909zy5hodrwcpm6&st=dfehyvv6&dl=0" type="video/mp4">
+      </video>
+      <div class="txt">
+        Role &amp; Responsibility as Digital Designer at Prodigious was the localisation and production of digital campaigns content for: Abbott | Audi | Cathay | Daimler Mercedes | Diageo | Emirates | Friso | Health Promotion Board | Mazda | McDonald | MG | Panadol | Samsung | SKII | Singapore Tourism Board | Singleton | Standard Chartered Bank | Subway | Vicks | Visa <br>
+      </div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row4">
+    <button onclick="myFunction4(); myFunction44()"><strong><span style="margin-left: -6px;">04 | BRAND IDENTS : #headzathome</span></strong>
+      <div id="show_hide4">+ view</div>
+    </button>
+    <script>
+      function myFunction4() {
+        var x = document.getElementById("content4");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction44() {
+        var x = document.getElementById("show_hide4");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content4">
+      <div class="slideshow">
+        <img src="images/headz/artboard-1.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-2.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-3.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-4.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-5.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-6.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-7.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-8.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-9.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-10.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-11.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-12.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-13.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-14.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-15.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-16.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-17.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-18.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-19.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-20.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-21.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-22.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-23.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-24.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-25.jpg" width="100%" alt="">
+        <img src="images/headz/artboard-26.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Instagram branding re-imagined competition 2020.<br> Initiated by Metalheadz, a UK Music Records Label.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row5">
+    <button onclick="myFunction5(); myFunction55()"><strong><span style="margin-left: -6px;">05 | BRAND IDENTS : Smooth Goods Co.</span></strong>
+      <div id="show_hide5">+ view</div>
+    </button>
+    <script>
+      function myFunction5() {
+        var x = document.getElementById("content5");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction55() {
+        var x = document.getElementById("show_hide5");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content5">
+      <div class="slideshow">
+        <img src="images/smooth/artboard-1.jpg" width="100%" alt="">
+        <img src="images/smooth/artboard-2.jpg" width="100%" alt="">
+        <img src="images/smooth/artboard-3.jpg" width="100%" alt="">
+        <img src="images/smooth/artboard-4.jpg" width="100%" alt="">
+        <img src="images/smooth/artboard-5.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">A Rockclimbing Lifestyle Products label, started by Peter and 2 friends in 2019. Short-lived venture, unfortunately.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row6">
+    <button onclick="myFunction6(); myFunction66()"><strong><span style="margin-left: -6px;">06 | BRAND IDENTS : KrystalStories</span></strong>
+      <div id="show_hide6">+ view</div>
+    </button>
+    <script>
+      function myFunction6() {
+        var x = document.getElementById("content6");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction66() {
+        var x = document.getElementById("show_hide6");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content6">
+      <div class="slideshow">
+        <img src="images/krystalstories/artboard-0.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-1.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-2.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-3.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-4.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-5.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-6.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-7.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-8.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-9.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-10.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-11.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-12.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-13.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-14.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-15.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-16.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-17.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-18.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-19.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-20.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-21.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-22.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-23.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-24.jpg" width="100%" alt="">
+        <img src="images/krystalstories/artboard-25.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Commissioned &amp; developmental logo designs for Crytals lifestyle products label, started by Miss Jacquelyn Soo in 2021.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row7">
+    <button onclick="myFunction7(); myFunction77()"><strong><span style="margin-left: -6px;">07 | BRAND IDENTS : POF  </span></strong>
+      <div id="show_hide7">+ view</div>
+    </button>
+    <script>
+      function myFunction7() {
+        var x = document.getElementById("content7");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction77() {
+        var x = document.getElementById("show_hide7");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content7">
+      <div class="slideshow">
+        <img src="images/POF/artboard-1.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-2.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-3.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-4.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-5.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-6.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-7.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-8.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-9.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-10.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-11.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-12.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-13.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-14.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-15.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-16.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-17.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-18.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-19.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-20.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-21.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-22.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-23.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-24.jpg" width="100%" alt="">
+        <img src="images/POF/artboard-25.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Developmental logo designs for Philosophy Of Football.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row8">
+    <button onclick="myFunction8(); myFunction88()"><strong><span style="margin-left: -6px;">08 | BRAND IDENTS : Logofolio</span></strong>
+      <div id="show_hide8">+ view</div>
+    </button>
+    <script>
+      function myFunction8() {
+        var x = document.getElementById("content8");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction88() {
+        var x = document.getElementById("show_hide8");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content8">
+      <div class="slideshow">
+        <img src="images/logofolio/artboard-1.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-2.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-3.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-4.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-5.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-6.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-7.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-8.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-9.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-10.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-11.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-12.jpg" width="100%" alt="">
+        <img src="images/logofolio/artboard-13.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Folio of other commissioned logo designs.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row9">
+    <button onclick="myFunction9(); myFunction99()"><strong><span style="margin-left: -6px;">09 | ILLUSTRATIONS : #wegotlecky</span></strong>
+      <div id="show_hide9">+ view</div>
+    </button>
+    <script>
+      function myFunction9() {
+        var x = document.getElementById("content9");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction99() {
+        var x = document.getElementById("show_hide9");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content9">
+      <div class="slideshow">
+        <img src="images/Jonez/artboard-1.jpg" width="100%" alt="">
+        <img src="images/Jonez/artboard-2.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Illustration and E-Invite Design for EG+ ex-colleagues &amp; friends Jon &amp; Inez's Wedding in 2018.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row10">
+    <button onclick="myFunction10(); myFunction100()"><strong><span style="margin-left: -6px;">10 | PHOTOGRAPHY : Mad Monks &amp; Home Club</span></strong>
+      <div id="show_hide10">+ view</div>
+    </button>
+    <script>
+      function myFunction10() {
+        var x = document.getElementById("content10");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction100() {
+        var x = document.getElementById("show_hide10");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content10">
+      <img src="images/photography/artboard-1.jpg" width="100%" alt="">
+      <div class="txt">Collage of archived photos taken on clubbing nights 2003-11s. </div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row11">
+    <button onclick="myFunction11(); myFunction111()"><strong><span style="margin-left: -6px;">11 | DIGITAL IMAGINGS : Blocs</span></strong>
+      <div id="show_hide11">+ view</div>
+    </button>
+    <script>
+      function myFunction11() {
+        var x = document.getElementById("content11");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction111() {
+        var x = document.getElementById("show_hide11");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content11">
+      <div class="slideshow_blocs">
+        <img src="images/blocs/artboard-1.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-1.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-2.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-3.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-4.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-5.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-6.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-7.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-8.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-9.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-10.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-11.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-12.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-13.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-14.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-15.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-16.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-17.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-18.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-19.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-20.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-21.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-22.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-23.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-24.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-25.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-26.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-27.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-28.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-29.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-30.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-31.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-32.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-33.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-34.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-35.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-36.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-37.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-38.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-39.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-40.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-41.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-42.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-43.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-44.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-45.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-46.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-47.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-48.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-49.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-50.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-51.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-52.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-53.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-54.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-55.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-56.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-57.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-58.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-59.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-60.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-61.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-62.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-63.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-64.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-65.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-66.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-67.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-68.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-69.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-70.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-71.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-71.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-71.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-71.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-70.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-69.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-68.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-67.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-66.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-65.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-64.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-63.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-62.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-61.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-60.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-59.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-58.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-57.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-56.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-55.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-54.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-53.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-52.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-51.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-50.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-49.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-48.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-47.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-46.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-45.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-44.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-43.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-42.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-41.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-40.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-39.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-38.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-37.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-36.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-35.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-34.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-33.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-32.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-31.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-30.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-29.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-28.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-27.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-26.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-25.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-24.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-23.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-22.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-21.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-20.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-19.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-18.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-17.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-16.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-15.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-14.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-13.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-12.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-11.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-10.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-9.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-8.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-7.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-6.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-5.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-4.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-3.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-2.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-1.jpg" width="100%" alt="">
+        <img src="images/blocs/artboard-1.jpg" width="100%" alt="">
+      </div>
+      <div class="txt">Animating with HTML5 codes.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row12">
+    <button onclick="myFunction12(); myFunction122()"><strong><span style="margin-left: -6px;">12 | ANIMATICS : Explorations</span></strong>
+      <div id="show_hide12">+ view</div>
+    </button>
+    <script>
+      function myFunction12() {
+        var x = document.getElementById("content12");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction122() {
+        var x = document.getElementById("show_hide12");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content12">
+      <video width="100%" playsinline="" loop="" muted="" autoplay="">
+        <source src="https://dl.dropboxusercontent.com/scl/fi/w64ps5y7u90c5on80bkeu/artboard-1.mp4?rlkey=10tpliq3bo75athtj0yq4jlsf&st=rlbxki14&dl=0" type="video/mp4">
+      </video>
+      <div class="txt"><strong>Series of Animatic Display Moodboards.</strong></div><strong>
+    </strong></div><strong>
+  </strong></div><strong>
+  <!--X-->
+  <div class="row13">
+    <button onclick="myFunction13(); myFunction133()"><strong><span style="margin-left: -6px;">13 | ARSENAL SG : Web Social Lead</span></strong>
+  <div id="show_hide13">+ view</div>
+  </button>
+  <script>
+    function myFunction13() {
+      var x = document.getElementById("content13");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script>
+    function myFunction133() {
+      var x = document.getElementById("show_hide13");
+      if (x.innerHTML === "+ view") {
+        x.innerHTML = "- close";
+      } else {
+        x.innerHTML = "+ view";
+      }
+    }
+  </script>
+  <div id="content13">
+    <video width="100%" controls="">
+      <source src="https://dl.dropboxusercontent.com/scl/fi/vna8dwrutk77iqw3jhthm/photos_montage.mp4?rlkey=sf1hz0hye7zucnz2wzil9xv7p&st=7se308sl&dl=0" type="video/mp4">
+    </video>
+    <div class="txt">Executive Member of The Arsenal Singapore Supporters Club from 2014-2019. In charge of Web &amp; Social Media. Here is a video montage for the club's 10th Anniversary Party in 2017. Design and video edit.</div>
+  </div>
+  </div>
+  <!--X-->
+  <div class="row14">
+    <button onclick="myFunction14(); myFunction144()"><strong><span style="margin-left: -6px;">14 | TWITCH.TV : Subcity x K.O.B</span></strong>
+      <div id="show_hide14">+ view</div>
+    </button>
+    <script>
+      function myFunction14() {
+        var x = document.getElementById("content14");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction144() {
+        var x = document.getElementById("show_hide14");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content14">
+      <video width="100%" controls="">
+        <source src="https://dl.dropboxusercontent.com/scl/fi/fkqg5ey14x1zoehn1bbv8/subcityxkob_set.mp4?rlkey=xwmd05xzmghzr9ra8trb9o89w&st=4vyznhx8&dl=0" type="video/mp4">
+      </video>
+      <div class="txt"><strong>DJ Livestream</strong><br> Set opener for the charity food drive &amp; dj twitch stream event June 2020.</div>
+    </div>
+  </div>
+  <!--X-->
+  <div class="row15">
+    <button onclick="myFunction15(); myFunction155()"><strong><span style="margin-left: -6px;">15 | SOUNDCLOUD : Bass Coats</span></strong>
+      <div id="show_hide15">+ view</div>
+    </button>
+    <script>
+      function myFunction15() {
+        var x = document.getElementById("content15");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+    </script>
+    <script>
+      function myFunction155() {
+        var x = document.getElementById("show_hide15");
+        if (x.innerHTML === "+ view") {
+          x.innerHTML = "- close";
+        } else {
+          x.innerHTML = "+ view";
+        }
+      }
+    </script>
+    <div id="content15">
+      <iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525988&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"></iframe>
+      <div style="font-size: 10px; color: #cccccc; line-break: anywhere; word-break: normal; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif; font-weight: 100;"></div>
+      <div class="txt"><strong>Playlist</strong><br> DJ Mixtapes</div>
+    </div>
+  </div>
+  <div class="backtop"><strong><a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Back To Top</a></strong></div>
+  <script>
+    (function(d) {
 
-<div class="logo"><a href="https://twitter.com/s_tactics" target="_blank">
-<img onMouseOver="this.src='navs/twitter1.png'"
- 	 onMouseOut="this.src='navs/twitter.png'"
- 	 src="navs/twitter.png" width="35vw" alt=""></a></div>  
-	
-<div class="logo"><a href="mailto:projektxtension@gmail.com" target="_blank">
-<img onMouseOver="this.src='navs/mail1.png'"
- 	 onMouseOut="this.src='navs/mail.png'"
- 	 src="navs/mail.png" width="35vw" alt=""></a></div>
-</div>
+      d.body.classList.add('slideshowActive');
 
-<!--X-->
-<div class="row1">
-<button onclick="myFunction1(); myFunction11()"><strong><span style="margin-left: -6px;">01 | PROFILE : Peter Woon, Digital Designer</span></strong><div id="show_hide1">+ view</div></button>
+      var
+        slideshowInterval = 5000;
+      slideshows = d.getElementsByClassName('slideshow');
 
-<script>
-function myFunction1() {
-  var x = document.getElementById("content1");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction11() {
-  var x = document.getElementById("show_hide1");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content1">
-<div class="slideshow">
-<img src="images/artboards/artboard-03.png" width="100%" alt="">
-<img src="images/artboards/artboard-04.png" width="100%" alt="">
-<img src="images/artboards/artboard-05.png" width="100%" alt="">
-<img src="images/artboards/artboard-06.png" width="100%" alt="">
-<img src="images/artboards/artboard-07.png" width="100%" alt="">
-<img src="images/artboards/artboard-11.png" width="100%" alt="">
-<img src="images/artboards/artboard-12.png" width="100%" alt="">	
-<img src="images/artboards/artboard-13.png" width="100%" alt="">
-<img src="images/artboards/artboard-14.png" width="100%" alt="">	
-<img src="images/artboards/artboard-15.png" width="100%" alt="">
-<img src="images/artboards/artboard-17.png" width="100%" alt="">	
-<img src="images/artboards/artboard-18.png" width="100%" alt="">	
-<img src="images/artboards/artboard-19.png" width="100%" alt="">	
-<img src="images/artboards/artboard-20.png" width="100%" alt="">	
-<img src="images/artboards/artboard-21.png" width="100%" alt="">	
-<img src="images/artboards/artboard-22.png" width="100%" alt="">	
-<img src="images/artboards/artboard-23.png" width="100%" alt="">
-<img src="images/artboards/artboard-26.png" width="100%" alt="">
-<img src="images/artboards/artboard-27.png" width="100%" alt="">
-<img src="images/artboards/artboard-28.png" width="100%" alt="">
-<img src="images/artboards/artboard-31.png" width="100%" alt="">
-<img src="images/artboards/artboard-33.png" width="100%" alt="">
-<img src="images/artboards/artboard-34.png" width="100%" alt="">
-<img src="images/artboards/artboard-43.png" width="100%" alt="">
-<img src="images/artboards/artboard-49.png" width="100%" alt="">
-<img src="images/artboards/artboard-50.png" width="100%" alt="">	
-<img src="images/artboards/artboard-56.png" width="100%" alt="">	
-<img src="images/artboards/artboard-57.png" width="100%" alt="">	
-<img src="images/artboards/artboard-59.png" width="100%" alt="">	
-<img src="images/artboards/artboard-60.png" width="100%" alt="">
-</div>
-	
-<div class="txt"><strong>Digital Designer (Open To Work)</strong><br>
-<strong>Into:</strong> Bouldering, Long Jogs, Slow Burns, DJing, Supporting The Arsenal</div>
-</div>  	
-</div>
+      for (var i = 0, show; show = slideshows[i]; i++) {
+        show['data-slideshowCurrent'] = show.firstElementChild;
+        show.firstElementChild.classList.add('current');
+      }
 
-<!--X-->
-<div class="row2">
-<button onclick="myFunction2(); myFunction22()"><strong><span style="margin-left: -6px;">02 | DIGITAL ART : #headzathome</span></strong>
-<div id="show_hide2">+ view</div></button>
+      function slideUpdate() {
+        for (var i = 0, show; show = slideshows[i]; i++) {
+          var current = show['data-slideshowCurrent'];
+          current.classList.remove('current');
+          if (!(show['data-slideshowCurrent'] = current.nextElementSibling))
+            show['data-slideshowCurrent'] = show.firstElementChild;
+          show['data-slideshowCurrent'].classList.add('current');
+        }
+      }
 
-<script>
-function myFunction2() {
-  var x = document.getElementById("content2");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+      window.addEventListener('load', function() {
+        setInterval(slideUpdate, slideshowInterval);
+      }, false);
 
-<script>	
-function myFunction22() {
-  var x = document.getElementById("show_hide2");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content2">
-<div class="slideshow">
-<img src="images/headzathome/Artboard1.jpg" width="100%" alt="">
-<img src="images/headzathome/Artboard2.jpg" width="100%" alt="">
-<img src="images/headzathome/Artboard3.jpg" width="100%" alt="">
-<img src="images/headzathome/Artboard4.jpg" width="100%" alt="">
-<img src="images/headzathome/Artboard5.jpg" width="100%" alt="">
-</div>
-	
-<div class="txt"><strong>#headzathome</strong> an Instagram competition 2020<br>
-Metalheadz a UK Records Label - Branding Reimagined</div>
-</div>  	
-</div>
+    })(document);
+  </script>
+  <script>
+    (function(d) {
 
-<!--X-->
-<div class="row3">
-<button onclick="myFunction3(); myFunction33()"><strong><span style="margin-left: -6px;">03 | BRAND IDENT : Smooth Goods Co.</span></strong>
-<div id="show_hide3">+ view</div></button>
+      d.body.classList.add('slideshow_blocsActive');
 
-<script>
-function myFunction3() {
-  var x = document.getElementById("content3");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
+      var
+        slideshowInterval = 0100;
+      slideshow_blocs = d.getElementsByClassName('slideshow_blocs');
 
-<script>	
-function myFunction33() {
-  var x = document.getElementById("show_hide3");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content3"> 
-<div class="slideshow">
-<img src="images/smooth/branding1.jpg" width="100%" alt="">
-<img src="images/smooth/branding2.jpg" width="100%" alt="">
-<img src="images/smooth/branding3.jpg" width="100%" alt="">
-<img src="images/smooth/branding4.jpg" width="100%" alt="">
-<img src="images/smooth/branding5.jpg" width="100%" alt="">
-<img src="images/smooth/branding6.jpg" width="100%" alt="">
-</div>
-<div class="txt"><strong>Smooth Goods Co.</strong><br>
-Branding - Rockclimbing Lifestyle Products</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row4">
-<button onclick="myFunction4(); myFunction44()"><strong><span style="margin-left: -6px;">04 | ILLUSTRATIONS : Sketches</span></strong>
-<div id="show_hide4">+ view</div></button>
+      for (var i = 0, show; show = slideshow_blocs[i]; i++) {
+        show['data-slideshow_blocsCurrent'] = show.firstElementChild;
+        show.firstElementChild.classList.add('current');
+      }
 
-<script>
-function myFunction4() {
-  var x = document.getElementById("content4");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction44() {
-  var x = document.getElementById("show_hide4");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content4">
-<div class="slideshow">
-<img src="images/self_promos/shells.jpg" width="100%" alt="">
-<img src="images/self_promos/caricatures.jpg" width="100%" alt="">
-<img src="images/self_promos/shells2.jpg" width="100%" alt="">
-</div>
-<div class="txt"><strong>Self Promotion</strong><br>
-Composite of drawing studies</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row5">
-<button onclick="myFunction5(); myFunction55()"><strong><span style="margin-left: -6px;">05 | TYPOGRAPHICS : Explorations</span></strong><div id="show_hide5">+ view</div></button>
+      function slideUpdate() {
+        for (var i = 0, show; show = slideshow_blocs[i]; i++) {
+          var current = show['data-slideshow_blocsCurrent'];
+          current.classList.remove('current');
+          if (!(show['data-slideshow_blocsCurrent'] = current.nextElementSibling))
+            show['data-slideshow_blocsCurrent'] = show.firstElementChild;
+          show['data-slideshow_blocsCurrent'].classList.add('current');
+        }
+      }
 
-<script>
-function myFunction5() {
-  var x = document.getElementById("content5");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction55() {
-  var x = document.getElementById("show_hide5");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content5">
-<div class="slideshow">
-<img src="images/artboards/COMBOs2019_Edits-02.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-03.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-04.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-05.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-06.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-07.png" width="100%" alt=""/>
-<img src="images/artboards/COMBOs2019_Edits-08.png" width="100%" alt=""/>
-</div>
+      window.addEventListener('load', function() {
+        setInterval(slideUpdate, slideshowInterval);
+      }, false);
 
-<div class="txt"><strong>Brand Idents</strong><br>
-Typographic Renders</div>
-</div>  	
-</div>
-
-<!--X-->
-<div class="row6">
-<button onclick="myFunction6(); myFunction66()"><strong><span style="margin-left: -6px;">06 | DIGITAL IMAGINGS : Explorations</span></strong><div id="show_hide6">+ view</div></button>
-
-<script>
-function myFunction6() {
-  var x = document.getElementById("content6");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction66() {
-  var x = document.getElementById("show_hide6");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content6">
-<div class="slideshow">
-<img src="images/self_promos/988335_10151971471389976_531281287_n.jpg" width="100%" alt=""/>
-<img src="images/self_promos/488051_10151532530624976_601515361_n.jpg" width="100%" alt=""/>
-<img src="images/self_promos/art2.png" width="100%" alt=""/>
-<img src="images/self_promos/ok2.jpg" width="100%" alt=""/>
-</div>
-
-<div class="txt"><strong>Digital Art</strong><br>
-Self Studies & Practice</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row7">
-<button onclick="myFunction7(); myFunction77()"><strong><span style="margin-left: -6px;">07 | DIGITAL IMAGINGS : Art Stories</span></strong><div id="show_hide7">+ view</div></button>
-
-<script>
-function myFunction7() {
-  var x = document.getElementById("content7");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction77() {
-  var x = document.getElementById("show_hide7");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content7">
-<img src="images/self_promos/artstories_remix.jpg" width="100%" alt=""/>
-<div class="txt"><strong>Imagings Edit</strong><br>
-With ArtStories SG</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row8">
-<button onclick="myFunction8(); myFunction88()"><strong><span style="margin-left: -6px;">08 | ARSENAL SG : Web Social Lead</span></strong><div id="show_hide8">+ view</div></button>
-
-<script>
-function myFunction8() {
-  var x = document.getElementById("content8");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction88() {
-  var x = document.getElementById("show_hide8");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content8">
-<img src="images/arsenal_sg/bruised.jpg" width="100%" alt=""/>
-<div class="txt"><strong>Bruised Banana</strong><br>
-An Arsenal Inspired Meme</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row9">
-<button onclick="myFunction9(); myFunction99()"><strong><span style="margin-left: -6px;">09 | TWITCH.TV : Subcity x K.O.B</span></strong><div id="show_hide9">+ view</div></button>
-
-<script>
-function myFunction9() {
-  var x = document.getElementById("content9");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction99() {
-  var x = document.getElementById("show_hide9");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-	
-<div id="content9">
-<a href="https://www.instagram.com/p/CDgBADXHOQX/" target="_blank"><img src="images/twitch/play_this.jpg" width="100%" alt=""/></a>
-<div class="txt"><strong>DJ Livestream</strong><br>
-Set opener for the charity food drive & dj twitch stream event June 2020</div>
-</div>  	
-</div>
-	
-<!--X-->
-<div class="row10">
-<button onclick="myFunction10(); myFunction100()"><strong><span style="margin-left: -6px;">10 | SOUNDCLOUD : Bass Coats</span></strong><div id="show_hide10">+ view</div></button>
-	
-<script>
-function myFunction10() {
-  var x = document.getElementById("content10");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
-	
-<script>	
-function myFunction100() {
-  var x = document.getElementById("show_hide10");
-  if (x.innerHTML === "+ view") {
-    x.innerHTML = "- close";
-  } else {
-    x.innerHTML = "+ view";
-  }
-}
-</script>
-<div id="content10">
-<iframe width="100%" height="300" scrolling="yes" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/525988&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"></div>
-<div class="txt"><strong>Playlist</strong><br>
-DJ Mixtapes</div>
-</div>  	
-</div>
-	
-<div class="backtop"><strong><a href="#" onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;event.preventDefault()">Back To Top</a></strong></div>
-
-<script>	
-(function(d) {
-
-	d.body.classList.add('slideshowActive');
-	
-	var
-		slideshowInterval = 5000;
-		slideshows = d.getElementsByClassName('slideshow');
-	
-	for (var i = 0, show; show = slideshows[i]; i++) {
-		show['data-slideshowCurrent'] = show.firstElementChild;
-		show.firstElementChild.classList.add('current');
-	}
-	
-	function slideUpdate() {
-		for (var i = 0, show; show = slideshows[i]; i++) {
-			var current = show['data-slideshowCurrent']; 
-			current.classList.remove('current');
-			if (!(show['data-slideshowCurrent'] = current.nextElementSibling))
-				show['data-slideshowCurrent'] = show.firstElementChild;
-			show['data-slideshowCurrent'].classList.add('current');
-		}
-	}
-	
-	window.addEventListener('load', function() {
-		setInterval(slideUpdate, slideshowInterval);
-	}, false);
-	
-})(document);
-</script>
-	
+    })(document);
+  </script>
+  </strong>
 </body>
+
 </html>
