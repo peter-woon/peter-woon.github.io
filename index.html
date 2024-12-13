@@ -277,18 +277,7 @@ a:active {
   </div>
   
   <script>$(function() {
-    // Get count of images
-    var icount = $('.slideshow img').length;
-    // Initialize count to track loaded images
-    var lcount = 30;
-    $('.slideshow img').load(
-        function() {
-             // If the loaded images is equal to the total images, show them all
-             if (++lcount >= icount) {
-                 $('.slideshow img').show();
-             }
-        }
-    );
+    $('.slideshow img').hide().get(0).show();
 });</script>
   
 <div class="subheader">"If the world were clear, art would not exist." - Albert Camus</div>
