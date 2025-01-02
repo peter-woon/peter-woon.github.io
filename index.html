@@ -131,6 +131,16 @@ button:hover {
 .active, .row:hover {
   background-color: none;
 }
+.rows_all {
+    width: 20%;
+    float: right;
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 100%;
+}
+.active, .rows_all:hover {
+  background-color: none;
+}
 .show_hide {
     width: 20%;
     float: right;
@@ -142,7 +152,7 @@ button:hover {
 .show_hide:hover {
     color: rgb(102, 102, 102);
 }
-#show_hide1, #show_hide2, #show_hide3, #show_hide4, #show_hide5, #show_hide6, #show_hide7, #show_hide8, #show_hide9, #show_hide10, #show_hide11, #show_hide12, #show_hide13, #show_hide14, #show_hide15 {
+#show_hide_all, #show_hide1, #show_hide2, #show_hide3, #show_hide4, #show_hide5, #show_hide6, #show_hide7, #show_hide8, #show_hide9, #show_hide10, #show_hide11, #show_hide12, #show_hide13, #show_hide14, #show_hide15 {
     width: 20%;
     float: right;
     margin-right: 0px;
@@ -150,7 +160,7 @@ button:hover {
     font-size: 100%;
     text-align: right;
 }  
-#show_hide1:hover, #show_hide2:hover, #show_hide3:hover, #show_hide4:hover, #show_hide5:hover, #show_hide6:hover, #show_hide7:hover, #show_hide8:hover, #show_hide9:hover, #show_hide10:hover, #show_hide11:hover, #show_hide12:hover, #show_hide13:hover, #show_hide14:hover, #show_hide15:hover {
+#show_hide_all:hover, #show_hide1:hover, #show_hide2:hover, #show_hide3:hover, #show_hide4:hover, #show_hide5:hover, #show_hide6:hover, #show_hide7:hover, #show_hide8:hover, #show_hide9:hover, #show_hide10:hover, #show_hide11:hover, #show_hide12:hover, #show_hide13:hover, #show_hide14:hover, #show_hide15:hover {
     color: rgb(102, 102, 102);
 }
 .content {
@@ -162,6 +172,7 @@ button:hover {
     transition: max-height 0.1s ease-out;
     text-align: left;
 }
+
 #content1, #content2, #content3, #content4, #content5, #content6, #content7, #content8, #content9, #content10, #content11, #content12, #content13, #content14, #content15 {
     width: 100%;
     float: left;
@@ -260,8 +271,8 @@ a:active {
 
 <body>
 <!--masthead-->
-<div class="url">Digital Arts, Design &amp; Music © 2025 PETER-WOON.GITHUB.IO</div>
-<div class="header">RESETS:2025
+    <div class="url">Digital Arts, Design &amp; Music © 2025 PETER-WOON.GITHUB.IO</div>
+    <div class="header">RESETS:2025
     <div class="header_img">
     </div>
     <video width="100%" playsinline="" loop="" muted="" autoplay="" poster="images/personal/artboard-1.jpg">
@@ -294,7 +305,38 @@ a:active {
     <a href="mailto:projektxtension@gmail.com" target="_blank">
     <img src="navs/mail.png" width="35vw" alt="" onmouseout="this.src='navs/mail.png'" onmouseover="this.src='navs/mail1.png'"></a>
     </div>
-</div>
+    </div>
+<!--view all close all-->
+    <div class="rows_all">
+    <button onClick="viewAll();" style="text-align: right; margin-top: -50px;">+ view all </button>
+    </div>
+<!--view all script-->
+    <script>
+        var coll = document.getElementsByClassName("row");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (!content.style.display || content.style.display === "block") {
+        content.style.display = "none";
+        } else {
+        content.style.display = "block";
+        }
+      });
+     }
+        function viewAll() 
+        {
+        Object.values(coll).forEach( (el) =>
+        {
+        if (!el.classList.contains("active"))
+        {
+        el.click();
+      }
+      });
+     }    
+    </script>
 <!--row1-->
     <div class="row_container">
     <button class="row" onclick="function1();"><strong><span style="margin-left: -6px;">01 | PROFILE : Peter Woon, Digital Designer</span></strong>
