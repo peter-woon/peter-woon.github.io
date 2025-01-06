@@ -302,7 +302,7 @@ a:active {
     </div>
 <!--view all close all-->
     <div class="rows_all">
-    <button id="toggleAll" onClick="viewAll();" style="text-align: right; margin-top: -50px;">+ view all</button>
+    <button onClick="viewAll();" id="toggleAll" style="text-align: right; margin-top: -50px;">+ view all</button>
     </div>
 <!--view all script-->
     <script>
@@ -312,7 +312,7 @@ a:active {
         coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        if (!content.style.display || content.style.display === "block") {
+        if (!content.style.display === "none" || content.style.display === "block") {
         content.style.display = "none";
         } else {
         content.style.display = "block";
@@ -327,18 +327,17 @@ a:active {
         {
         el.click();
         }
-        if (!el.classList.toggle("active"))
+        if (!el.classList.toggle("visible"))
         {
         el.click();
         }
       });
      }
-      
       const toggleAllButton = document.getElementById('toggleAll');
-    const row = document.querySelectorAll('.row');
-    let isExpanded = true; // Tracks the current state
+      const row = document.querySelectorAll('.row');
+      let isExpanded = false; // Tracks the current state
 
-    toggleAllButton.addEventListener('click', () => {
+      toggleAllButton.addEventListener('click', () => {
       isExpanded = !isExpanded; // Toggle state
       row.forEach(content => {
         content.style.display = isExpanded ? 'block' : 'none';
