@@ -121,11 +121,11 @@ button:hover {
 .row_container {
     float: left;
     width: 100%;
-    border-bottom: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255); 
 }
 .row {
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.2s;
     display: block;
 }
 .active, .row:hover {
@@ -153,7 +153,7 @@ button:hover {
 .show_hide:hover {
     color: rgb(102, 102, 102);
 }
-#show_hide_all, #show_hide1, #show_hide2, #show_hide3, #show_hide4, #show_hide5, #show_hide6, #show_hide7, #show_hide8, #show_hide9, #show_hide10, #show_hide11, #show_hide12, #show_hide13, #show_hide14, #show_hide15 {
+#show_hide1, #show_hide2, #show_hide3, #show_hide4, #show_hide5, #show_hide6, #show_hide7, #show_hide8, #show_hide9, #show_hide10, #show_hide11, #show_hide12, #show_hide13, #show_hide14, #show_hide15 {
     width: 20%;
     float: right;
     margin-right: 0px;
@@ -161,7 +161,7 @@ button:hover {
     font-size: 100%;
     text-align: right;
 }  
-#show_hide_all:hover, #show_hide1:hover, #show_hide2:hover, #show_hide3:hover, #show_hide4:hover, #show_hide5:hover, #show_hide6:hover, #show_hide7:hover, #show_hide8:hover, #show_hide9:hover, #show_hide10:hover, #show_hide11:hover, #show_hide12:hover, #show_hide13:hover, #show_hide14:hover, #show_hide15:hover {
+#show_hide1:hover, #show_hide2:hover, #show_hide3:hover, #show_hide4:hover, #show_hide5:hover, #show_hide6:hover, #show_hide7:hover, #show_hide8:hover, #show_hide9:hover, #show_hide10:hover, #show_hide11:hover, #show_hide12:hover, #show_hide13:hover, #show_hide14:hover, #show_hide15:hover {
     color: rgb(102, 102, 102);
 }
 .content {
@@ -169,7 +169,7 @@ button:hover {
     height: 100%;
     float: left;
     margin-bottom: -4px;
-    max-height: 0;
+    max-height: 0px;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     text-align: left;
@@ -925,7 +925,7 @@ a:active {
     if (content.style.maxHeight) {
       content.style.maxHeight = null;
     } else {
-      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.maxHeight = content.scrollHeight + "0px";
     }
   });
 }
